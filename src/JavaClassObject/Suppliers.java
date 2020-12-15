@@ -13,7 +13,7 @@ import java.sql.SQLException;
  * @author acer
  */
 public class Suppliers {
-    protected String companycode, companyname, tradingname, address, email, phonenumber;
+    protected String companycode, companyname, tradingname, address, email, phonenumber, logo;
 
     public Suppliers() {
     }
@@ -66,6 +66,16 @@ public class Suppliers {
         this.phonenumber = phonenumber;
     }
 
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+    
+    
+
     @Override
     public String toString() {
         return "Suppliers{" + "companycode=" + companycode + ", companyname=" + companyname + ", tradingname=" + tradingname + ", address=" + address + ", email=" + email + ", phonenumber=" + phonenumber + '}';
@@ -78,6 +88,7 @@ public class Suppliers {
         supplier.setAddress(rs.getNString("address"));
         supplier.setEmail(rs.getString("email"));
         supplier.setPhonenumber(rs.getString("phone_number"));
+        supplier.setLogo(rs.getString("logo_supplier"));
         return supplier;
     }
 }
