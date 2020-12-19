@@ -4,15 +4,11 @@
  * and open the template in the editor.
  */
 
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream:src/qlbhgg/Test/NewJFrame.java
 package qlbhgg.Test;
 =======
 package Test;
 >>>>>>> Stashed changes:src/Test/NewJFrame.java
-=======
-package qlbhgg.Test;
->>>>>>> Stashed changes
 
 /**
  *
